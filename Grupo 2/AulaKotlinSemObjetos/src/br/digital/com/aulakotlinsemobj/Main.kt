@@ -11,6 +11,10 @@ fun main(){
     println("Exercício 1: "+ exercicio1(5, 7, 1))
     println("Exercício 2: "+ exercicio2("Matheus", "faffds"))
     println("Exercício 3: "+ exercicio3(3))
+    exercicio4()
+    println()
+    println(exercicio5(9, 8, 7, 2))
+    exercicio6()
 }
 
 //Exercicio 1
@@ -35,6 +39,23 @@ fun exercicio2(str1: String, str2: String): Boolean{
 //Exercicio 3
 fun exercicio3(num: Int): Boolean{
     return (num % 2 == 0)
+}
+
+//Exercicio 4
+fun exercicio4(){
+    for (i in 1..200 step 2)
+        print("$i, ")
+}
+
+//Exercicio 5
+fun exercicio5(numA: Int, numB: Int, numC: Int, numD: Int): Boolean{
+    return ((numA > numC && numA > numD) || (numB > numC && numB > numD))
+}
+
+//Exercicio 6
+fun exercicio6(){
+    for (i in 1..100)
+        print("$i, ")
 }
 
 fun meuNome(nome: String, sobrenome: String): String{
