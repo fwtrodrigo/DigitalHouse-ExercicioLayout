@@ -9,11 +9,13 @@
     >
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         app:title="@string/app_name"
         app:titleTextColor="@color/colorWhite"
+        app:menu="@menu/menu_app"
         />
 
     <LinearLayout
@@ -45,7 +47,7 @@
             android:id="@+id/edt_gasolina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:hint="Preço da Gasolina"
             />
 
@@ -59,7 +61,7 @@
             android:id="@+id/edt_etanol"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:hint="Preço do Etanol"
             />
 
@@ -76,12 +78,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/str_resultado"
+            android:textColor="@color/colorPrimary"
             />
 
         <ImageView
             android:id="@+id/img_res"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
             />
     </LinearLayout>
 </LinearLayout>
